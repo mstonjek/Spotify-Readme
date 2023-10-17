@@ -4,6 +4,8 @@ from dotenv import find_dotenv, load_dotenv
 from flask import Flask, Response, render_template, request
 from os import getenv
 from random import randint
+from werkzeug.utils import url_quote
+
 
 # Load environment variables
 load_dotenv(find_dotenv())
